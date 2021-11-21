@@ -1,6 +1,6 @@
 {
   "name": "@funnyzak/xfyun-tts",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "a xfyun nls node module.",
   "main": "index.js",
   "files": [
