@@ -1,4 +1,4 @@
-# XFYun NLS
+# XFYun TTS
 
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/feross/standard)
 [![action][ci-image]][ci-url]
