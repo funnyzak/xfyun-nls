@@ -1,6 +1,6 @@
 {
   "name": "xfyun-tts",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "a xfyun nls node module.",
   "main": "index.js",
   "files": [
