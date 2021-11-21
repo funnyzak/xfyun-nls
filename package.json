@@ -1,5 +1,5 @@
 {
-  "name": "xfyun-tts",
+  "name": "@funnyzak/xfyun-tts",
   "version": "0.7.0",
   "description": "a xfyun nls node module.",
   "main": "index.js",
