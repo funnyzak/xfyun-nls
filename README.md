@@ -32,6 +32,7 @@ const path = require('path');
 !(async () => {
   const _xfyTTS = new XFYunTTS(
     {
+      // XFYunTTS.Config
       appId: 'appid',
       apiSecret: 'apisecret',
       apiKey: 'apikey',
@@ -39,17 +40,50 @@ const path = require('path');
       uri: '/v2/tts',
       hostUrl: 'wss://tts-api.xfyun.cn/v2/tts'
     },
-    path.join(process.cwd(), new Date().getTime().toString()) /** optional **/
+    path.join(
+      process.cwd(),
+      new Date().getTime().toString()
+    ) /** catchPath (optional) **/
   );
 
   // send
-  console.log((await _xfyTTS.send('你好')).);
+  console.log((await _xfyTTS.send('你好')).filePath);
 
   // more ...
 })();
 ```
 
-了解更多 [nls define](lib/nls.d.ts).
+了解更多 [TTS Define](lib/nls.d.ts).
+
+## 函数
+
+`XFYunTTS` 有如下方法:
+
+### `checkConfig(): Promise<boolean>`
+
+返回值 `Promise<boolean>` - 返回讯飞云语音配置密钥是否有效。
+
+```js
+const checkRlt = await _XFYunTTS.checkConfig();
+console.log(checkRlt ? 'the config is passed' : 'error config');
+```
+
+### `send(text: string, options?: XFYunTTS.BusinessOption): Promise<XFYunTTS.TTSComplete>`
+
+- `text` string - 要转换的文本。
+- `options` XFYunTTS.BusinessOption (optional) - 合成设置。
+
+返回值 `Promise<XFYunTTS.TTSComplete>` - 转换完成对象。
+
+## 定义
+
+### BusinessOption
+
+请看定义 [BusinessOption](lib/nls.d.ts)。
+
+### TTSComplete
+
+请看定义 [TTSComplete](lib/nls.d.ts)。
 
 ## Author
 
