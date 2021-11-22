@@ -1,4 +1,4 @@
-# XFYun TTS
+# XFYun NLS
 
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/feross/standard)
 [![action][ci-image]][ci-url]
@@ -6,14 +6,14 @@
 [![NPM version][npm-image]][npm-url]
 [![npm download][download-image]][download-url]
 
-[ci-image]: https://img.shields.io/github/workflow/status/funnyzak/xfyun-tts/Node.js%20CI
-[ci-url]: https://github.com/funnyzak/xfyun-tts/actions
-[license-image]: https://img.shields.io/github/license/funnyzak/xfyun-tts.svg?style=flat-square
-[repository-url]: https://github.com/funnyzak/xfyun-tts
-[npm-image]: https://img.shields.io/npm/v/@funnyzak/xfyun-tts.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@funnyzak/xfyun-tts
-[download-image]: https://img.shields.io/npm/dm/@funnyzak/xfyun-tts.svg?style=flat-square
-[download-url]: https://npmjs.org/package/@funnyzak/xfyun-tts
+[ci-image]: https://img.shields.io/github/workflow/status/funnyzak/xfyun-nls/Node.js%20CI
+[ci-url]: https://github.com/funnyzak/xfyun-nls/actions
+[license-image]: https://img.shields.io/github/license/funnyzak/xfyun-nls.svg?style=flat-square
+[repository-url]: https://github.com/funnyzak/xfyun-nls
+[npm-image]: https://img.shields.io/npm/v/xfyun-nls.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/xfyun-nls
+[download-image]: https://img.shields.io/npm/dm/xfyun-nls.svg?style=flat-square
+[download-url]: https://npmjs.org/package/xfyun-nls
 
 讯飞云语音合成 Node 模块。
 
@@ -21,12 +21,12 @@
 
 from [npm](https://github.com/npm/npm)
 
-    $ npm install @funnyzak/xfyun-tts
+    $ npm install xfyun-nls
 
 ## 用例
 
 ```js
-const { XFYunTTS } = require('@funnyzak/xfyun-tts');
+const { XFYunTTS } = require('xfyun-nls');
 const path = require('path');
 
 !(async () => {
@@ -53,7 +53,7 @@ const path = require('path');
 })();
 ```
 
-了解更多 [TTS Define](lib/nls.d.ts).
+了解更多 [TTS Define](https://github.com/funnyzak/xfyun-nls/blob/master/lib/tts.d.ts).
 
 ## 函数
 
@@ -79,11 +79,11 @@ console.log(checkRlt ? 'the config is passed' : 'error config');
 
 ### BusinessOption
 
-请看定义 [BusinessOption](lib/nls.d.ts)。
+请看定义 [BusinessOption](https://github.com/funnyzak/xfyun-nls/blob/master/lib/tts.d.ts)。
 
 ### TTSComplete
 
-请看定义 [TTSComplete](lib/nls.d.ts)。
+请看定义 [TTSComplete](https://github.com/funnyzak/xfyun-nls/blob/master/lib/tts.d.ts)。
 
 ## Author
 

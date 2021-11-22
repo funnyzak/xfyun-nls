@@ -1,13 +1,13 @@
 {
-  "name": "@funnyzak/xfyun-tts",
-  "version": "0.9.0",
-  "description": "a xfyun tts node module.",
+  "name": "xfyun-nls",
+  "version": "0.1.0",
+  "description": "a xfyun nls node module.",
   "main": "index.js",
   "files": [
     "lib/**/*",
     "index.js"
   ],
-  "types": "lib/tts.d.ts",
+  "types": "lib/*.d.ts",
   "scripts": {
     "lint": "eslint --fix src",
     "test": "npm run build && mocha test/*.test.js",
@@ -19,10 +19,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/funnyzak/xfyun-tts.git"
+    "url": "git+ssh://git@github.com/funnyzak/xfyun-nls.git"
   },
   "keywords": [
-    "xfyun tts",
+    "xfyun nls",
+    "nls",
     "tts",
     "xfyun",
     "nodejs",
@@ -31,9 +32,9 @@
   "author": "eric <silenceace@gmail.com>",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/funnyzak/xfyun-tts/issues"
+    "url": "https://github.com/funnyzak/xfyun-nls/issues"
   },
-  "homepage": "https://github.com/funnyzak/xfyun-tts#readme",
+  "homepage": "https://github.com/funnyzak/xfyun-nls#readme",
   "dependencies": {
     "chalk": "4.1.2",
     "crypto-js": "4.1.1",

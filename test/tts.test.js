@@ -1,7 +1,7 @@
 'use strict';
 
 const expect = require('expect.js');
-const XFYunTTS = require('../lib/nls');
+const XFYunTTS = require('../lib/tts');
 
 describe('XFYunTTS Core', function () {
   describe('XFYunTTS', function () {
