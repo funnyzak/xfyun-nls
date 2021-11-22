@@ -17,6 +17,24 @@
 
 讯飞云自然语言处理 Node 模块。
 
+## 目录
+
+- [XFYun NLS](#xfyun-nls)
+  - [目录](#目录)
+  - [开始](#开始)
+  - [模块](#模块)
+    - [在线语音合成](#在线语音合成)
+      - [用例](#用例)
+      - [函数](#函数)
+        - [`checkConfig(): Promise<boolean>`](#checkconfig-promiseboolean)
+        - [`send(text: string, options?: XFYunTTS.BusinessOption): Promise<XFYunTTS.TTSComplete>`](#sendtext-string-options-xfyunttsbusinessoption-promisexfyunttsttscomplete)
+      - [定义](#定义)
+        - [BusinessOption](#businessoption)
+        - [TTSComplete](#ttscomplete)
+  - [Author](#author)
+  - [参考](#参考)
+  - [License](#license)
+
 ## 开始
 
 from [npm](https://github.com/npm/npm)
