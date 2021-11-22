@@ -5,6 +5,7 @@
   "main": "index.js",
   "files": [
     "lib/**/*",
+    "nls.d.ts",
     "index.js"
   ],
   "types": "nls.d.ts",
