@@ -38,14 +38,14 @@
   "dependencies": {
     "chalk": "4.1.2",
     "crypto-js": "4.1.1",
-    "ws": "8.2.3"
+    "ws": "8.2.3",
+    "core-js": "3.19.1",
+    "@babel/plugin-transform-runtime": "7.16.4"
   },
   "devDependencies": {
     "@babel/cli": "7.16.0",
     "@babel/core": "7.16.0",
-    "@babel/plugin-transform-runtime": "7.16.4",
     "@babel/preset-env": "7.16.4",
-    "core-js": "3.19.1",
     "eslint": "8.2.0",
     "expect.js": "0.3.1",
     "husky": "7.0.4",
@@ -65,13 +65,17 @@
       [
         "@babel/preset-env",
         {
-          "useBuiltIns": "entry",
-          "corejs": "3.3.5"
+          "useBuiltIns": "usage"
         }
       ]
     ],
     "plugins": [
-      "@babel/plugin-transform-runtime"
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "corejs": 3
+        }
+      ]
     ]
   },
   "np": {
