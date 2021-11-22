@@ -5,9 +5,10 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master, develop ]
-  pull_request:
-    branches: [ master, develop ]
+    tags: # 当我们提交代码tag的时候才会触发自动部署到服务端 如 git push tag 0.1.0
+      - '*'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build:

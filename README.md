@@ -108,7 +108,7 @@ console.log(checkRlt ? 'the config is passed' : 'error config');
 
 更多请看定义 [BusinessOption](https://github.com/funnyzak/xfyun-nls/blob/master/lib/tts.d.ts)。
 
-(官方文档参考)[https://www.xfyun.cn/doc/tts/online_tts/API.html#%E6%8E%A5%E5%8F%A3%E8%A6%81%E6%B1%82]，字段名和官方保持一致。
+[官方文档参考](https://www.xfyun.cn/doc/tts/online_tts/API.html#%E6%8E%A5%E5%8F%A3%E8%A6%81%E6%B1%820；此对象字段名和官方保持一致。
 
 ##### XFYunTTS.TTSComplete
 
