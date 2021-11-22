@@ -9,7 +9,7 @@
       "DOM"
     ],
     "moduleResolution": "node",
-    "module": "esnext",
+    "module": "commonjs",
     "target": "es5",
     "allowJs": true,
     "jsx": "react",
@@ -19,5 +19,5 @@
   },
   "include": [
     "./src/**/*"
-, "lib/nls.d.ts"  ]
+, "nls.d.ts"  ]
 }
