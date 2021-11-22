@@ -19,5 +19,5 @@
   },
   "include": [
     "./src/**/*"
-, "lib/tts.d.ts"  ]
+, "lib/nls.d.ts"  ]
 }

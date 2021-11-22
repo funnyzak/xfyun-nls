@@ -71,7 +71,7 @@ const fs = require('fs');
 })();
 ```
 
-了解更多 [TTS Define](https://github.com/funnyzak/xfyun-nls/blob/master/lib/tts.d.ts).
+了解更多 [TTS Define](https://github.com/funnyzak/xfyun-nls/blob/master/lib/nls.d.ts).
 
 ### 函数
 
@@ -103,7 +103,7 @@ console.log(checkRlt ? 'the config is passed' : 'error config');
 - `aux` string - 音频编码。
 - `vcn` string - 发音人。
 
-更多请看定义 [BusinessOption](https://github.com/funnyzak/xfyun-nls/blob/master/lib/tts.d.ts)。
+更多请看定义 [BusinessOption](https://github.com/funnyzak/xfyun-nls/blob/master/lib/nls.d.ts)。
 
 [官方文档参考](https://www.xfyun.cn/doc/tts/online_tts/API.html#%E6%8E%A5%E5%8F%A3%E8%A6%81%E6%B1%820)。
 
@@ -119,7 +119,7 @@ console.log(checkRlt ? 'the config is passed' : 'error config');
 - `startTime` number - 合成任务开始的时间戳（毫秒）。
 - `elapsed` number - 合成所耗费的时间（毫秒）。
 
-更多请看定义 [TTSComplete](https://github.com/funnyzak/xfyun-nls/blob/master/lib/tts.d.ts)。
+更多请看定义 [TTSComplete](https://github.com/funnyzak/xfyun-nls/blob/master/lib/nls.d.ts)。
 
 ## Author
 
