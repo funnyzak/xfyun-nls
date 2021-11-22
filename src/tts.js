@@ -213,8 +213,9 @@ class XFYunTTS {
       };
 
       this.ws.onerror = (ev) => {
-        this.log(`ws error. data: ${JSON.stringify(ev)}`);
-        reject(new Error(`ws onerror handle. data: ${JSON.stringify(ev)}`));
+        const errorMsg = `ws error. maybe 1.key setting error. 2. vcn permission`;
+        this.log(errorMsg, 'error');
+        reject(new Error(errorMsg));
       };
 
       const filePath = this.randomSavePath();

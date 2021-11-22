@@ -116,7 +116,7 @@ declare namespace XFYunTTS {
    */
   export interface TTSComplete {
     /**
-     * 保存路径
+     * 音频文件最终保存路径
      */
     filePath: string;
 
