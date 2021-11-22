@@ -1,6 +1,6 @@
 {
   "name": "xfyun-nls",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a xfyun nls node module.",
   "main": "index.js",
   "files": [
