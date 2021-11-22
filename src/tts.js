@@ -99,14 +99,15 @@ class XFYunTTS {
   }
 
   /**
- * 网络检查配置是否正确
- * @returns
- */
+   * 网络检查配置是否正确
+   * @returns
+   */
   async checkConfig() {
     try {
       await this.send('Hello World');
       return true;
-    } catch {
+    } catch (error) {
+      this.log(`check config error: ${error.message}`, 'error');
       return false;
     }
   }
@@ -187,7 +188,11 @@ class XFYunTTS {
       const _startTS = new Date().getTime();
 
       this.ws.onopen = () => {
-        this.log(`task => text: ${text}, options: ${JSON.stringify(this.businessOption)}`);
+        this.log(
+          `task => text: ${text}, options: ${JSON.stringify(
+            this.businessOption
+          )}`
+        );
 
         const frame = {
           common: {
@@ -213,20 +218,22 @@ class XFYunTTS {
       };
 
       const filePath = this.randomSavePath();
-      this.receive(filePath).then(() => {
-        resolve({
-          filePath,
-          text,
-          startTime: _startTS,
-          options: this.businessOption,
-          rootPath: this.cachePath,
-          suffix: path.extname(filePath).substring(1),
-          elapsed: new Date().getTime() - _startTS
+      this.receive(filePath)
+        .then(() => {
+          resolve({
+            filePath,
+            text,
+            startTime: _startTS,
+            options: this.businessOption,
+            rootPath: this.cachePath,
+            suffix: path.extname(filePath).substring(1),
+            elapsed: new Date().getTime() - _startTS
+          });
         })
-      }).catch(err => {
-        this.log(`receive error: ${err.message}.`, 'error');
-        reject(err);
-      });
+        .catch((err) => {
+          this.log(`receive error: ${err.message}.`, 'error');
+          reject(err);
+        });
     });
   }
 
@@ -237,13 +244,14 @@ class XFYunTTS {
   randomSavePath() {
     return path.join(
       this.cachePath,
-      `${new Date().getTime().toString()}.${this.businessOption.aue === 'raw'
-        ? 'pcm'
-        : this.businessOption.aue === 'lame'
+      `${new Date().getTime().toString()}.${
+        this.businessOption.aue === 'raw'
+          ? 'pcm'
+          : this.businessOption.aue === 'lame'
           ? 'mp3'
           : this.businessOption.aux.startsWith('speex')
-            ? 'speex'
-            : 'audio'
+          ? 'speex'
+          : 'audio'
       }`
     );
   }

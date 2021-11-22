@@ -149,7 +149,6 @@ declare namespace XFYunTTS {
      * 耗时（毫秒）
      */
     elapsed: number;
-
   }
 
   /**

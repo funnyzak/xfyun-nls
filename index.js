@@ -1,4 +1,4 @@
 'use strict';
 
-module.exports = require('./lib/nls');
-module.exports.XFYunTTS = require('./lib/nls');
+module.exports = require('./lib/tts');
+module.exports.XFYunTTS = require('./lib/tts');

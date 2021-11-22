@@ -1,13 +1,13 @@
 {
   "name": "@funnyzak/xfyun-tts",
   "version": "0.9.0",
-  "description": "a xfyun nls node module.",
+  "description": "a xfyun tts node module.",
   "main": "index.js",
   "files": [
     "lib/**/*",
     "index.js"
   ],
-  "types": "lib/nls.d.ts",
+  "types": "lib/tts.d.ts",
   "scripts": {
     "lint": "eslint --fix src",
     "test": "npm run build && mocha test/*.test.js",
@@ -22,8 +22,8 @@
     "url": "git+ssh://git@github.com/funnyzak/xfyun-tts.git"
   },
   "keywords": [
-    "xfyun nls",
-    "nls",
+    "xfyun tts",
+    "tts",
     "xfyun",
     "nodejs",
     "funnyzak"
