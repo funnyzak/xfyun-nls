@@ -22,15 +22,14 @@
 - [XFYun NLS](#xfyun-nls)
   - [目录](#目录)
   - [开始](#开始)
-  - [模块](#模块)
-    - [在线语音合成](#在线语音合成)
-      - [用例](#用例)
-      - [函数](#函数)
-        - [`checkConfig(): Promise<boolean>`](#checkconfig-promiseboolean)
-        - [`send(text: string, options?: XFYunTTS.BusinessOption): Promise<XFYunTTS.TTSComplete>`](#sendtext-string-options-xfyunttsbusinessoption-promisexfyunttsttscomplete)
-      - [定义](#定义)
-        - [XFYunTTS.BusinessOption](#xfyunttsbusinessoption)
-        - [XFYunTTS.TTSComplete](#xfyunttsttscomplete)
+  - [在线语音合成](#在线语音合成)
+    - [用例](#用例)
+    - [函数](#函数)
+      - [`checkConfig(): Promise<boolean>`](#checkconfig-promiseboolean)
+      - [`send(text: string, options?: XFYunTTS.BusinessOption): Promise<XFYunTTS.TTSComplete>`](#sendtext-string-options-xfyunttsbusinessoption-promisexfyunttsttscomplete)
+    - [定义](#定义)
+      - [XFYunTTS.BusinessOption](#xfyunttsbusinessoption)
+      - [XFYunTTS.TTSComplete](#xfyunttsttscomplete)
   - [Author](#author)
   - [参考](#参考)
   - [License](#license)
@@ -41,11 +40,9 @@ from [npm](https://github.com/npm/npm)
 
     $ npm install xfyun-nls
 
-## 模块
+## 在线语音合成
 
-### 在线语音合成
-
-#### 用例
+### 用例
 
 ```js
 const { XFYunTTS } = require('xfyun-nls');
@@ -76,11 +73,11 @@ const fs = require('fs');
 
 了解更多 [TTS Define](https://github.com/funnyzak/xfyun-nls/blob/master/lib/tts.d.ts).
 
-#### 函数
+### 函数
 
 `XFYunTTS` 有如下方法:
 
-##### `checkConfig(): Promise<boolean>`
+#### `checkConfig(): Promise<boolean>`
 
 返回值 `Promise<boolean>` - 返回讯飞云语音配置密钥是否有效。
 
@@ -89,16 +86,16 @@ const checkRlt = await _XFYunTTS.checkConfig();
 console.log(checkRlt ? 'the config is passed' : 'error config');
 ```
 
-##### `send(text: string, options?: XFYunTTS.BusinessOption): Promise<XFYunTTS.TTSComplete>`
+#### `send(text: string, options?: XFYunTTS.BusinessOption): Promise<XFYunTTS.TTSComplete>`
 
 - `text` string - 要转换的文本。
 - `options` XFYunTTS.BusinessOption (optional) - 合成设置。
 
 返回值 `Promise<XFYunTTS.TTSComplete>` - 转换完成对象。
 
-#### 定义
+### 定义
 
-##### XFYunTTS.BusinessOption
+#### XFYunTTS.BusinessOption
 
 合成语言的业务参数，有如下参数：
 
@@ -110,7 +107,7 @@ console.log(checkRlt ? 'the config is passed' : 'error config');
 
 [官方文档参考](https://www.xfyun.cn/doc/tts/online_tts/API.html#%E6%8E%A5%E5%8F%A3%E8%A6%81%E6%B1%820)。
 
-##### XFYunTTS.TTSComplete
+#### XFYunTTS.TTSComplete
 
 合成结果对象，有如下属性：
 
