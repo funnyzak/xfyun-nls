@@ -15,7 +15,7 @@
 [download-image]: https://img.shields.io/npm/dm/xfyun-nls.svg?style=flat-square
 [download-url]: https://npmjs.org/package/xfyun-nls
 
-讯飞云自然语言处理 Node 模块。
+讯飞云智能语音处理 Node 模块。
 
 ## 目录
 
